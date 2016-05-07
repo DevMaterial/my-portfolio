@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    Basic Page Needs
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+    <meta charset="utf-8">
+    <title>Yo.</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+    Mobile Specific Metas
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    FONT
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!--
+    CSS
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!--
+    Favicon
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <!--
+    Primary Page Layout
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+    <header>
+      <nav><a id="i-nav"><img src="https://www.3riversfcu.org/assets/images/menu.png" class="nav-icon"></a>
+        <ul>
+          <li><a href="#text1">About</a></li>
+          <li><a href="#text3">Work</a></li>
+          <li><a href="#text4">Contact</a></li>
+          <li> <a href="http://developermaterial.tumblr.com/">Blog</a></li>
+          <li> <a href="https://www.youtube.com/channel/UClE-pN-OOQrRUwi6HFHmDpA">Youtube</a></li>
+        </ul>
+      </nav><img src="images/intro.png" alt="" class="tsimg"><img src="http://www.cclspecialty.com/_images/iconsLogosUniversal/downArrow.png" alt="" class="arrow">
+    </header>
+    <div class="about"></div>
+    <h2 id="text1">I make youtube tutorials</h2>
+    <hr>
+    <div class="videos">
+      <iframe width="350" height="250" src="https://www.youtube.com/embed/gOmHKM5xOMc" frameborder="0" allowfullscreen=""></iframe>
+      <iframe width="350" height="250" src="https://www.youtube.com/embed/4rnFvqaY-go" frameborder="0" allowfullscreen=""></iframe>
+      <iframe width="350" height="250" src="https://www.youtube.com/embed/DXmiH0hBNzU" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    <section class="top">
+      <h2 id="text2">Skills</h2>
+      <hr><img src="images/graph.png" alt="" class="graph">
+      <hr class="line2">
+      <h4>My current stack:</h4>
+      <p>HTML / CSS / Javascript / jQuery / SASS / Jade</p>
+      <hr class="line2"><img src="images/skills.png" alt="" class="skills">
+    </section>
+    <h2 id="text3">Works</h2>
+    <hr class="line3">
+    <h3 class="large">Some of my projects
+      <div class="container">
+        <div class="row">
+          <div class="six columns"><img src="images/hike.jpg" class="images">
+            <div class="button-space"><a href="http://devmaterial.github.io/hike/">
+                <button class="button-primary">Website</button></a></div><a href="https://github.com/DevMaterial/hike" class="button">Github</a>
+          </div>
+          <div class="six columns"><img src="images/gullible.jpg" class="images">
+            <div class="button-space"><a href="http://devmaterial.github.io/gullible-shop/">
+                <button class="button-primary">Website</button></a></div><a href="https://github.com/DevMaterial/gullible-shop" class="button">Github</a>
+          </div>
+        </div>
+      </div>
+    </h3>
+    <section class="bottom">
+      <h2 id="text4">\ Contact Me /</h2><a href="mailto:developer.material@gmail.com" class="email">
+        <h4>developer.material@gmail.com</h4></a>
+      <hr>
+      <div class="social-icons">
+        <ul>
+          <li><a href="https://github.com/DevMaterial"><img src="icons/gh-icon.png" class="icons"></a></li>
+          <li><a href="https://twitter.com/DevMaterial"><img src="icons/twitter-icon.png" class="icons"></a></li>
+          <li><a href="https://www.linkedin.com/in/travis-sanon-120b6099"><img src="icons/in-icon.png" class="icons"></a></li>
+          <li><a href="https://www.youtube.com/channel/UClE-pN-OOQrRUwi6HFHmDpA"><img src="icons/yt-icon.png" class="icons"></a></li>
+        </ul>
+      </div>
+    </section>
+    <h2>\ My Location /</h2>
+    <h5>(Willing to relocate)</h5>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+      var mapDiv = document.getElementById('map');
+      var map = new google.maps.Map(mapDiv, {
+      center: {lat: 33.748995, lng: -84.387982},
+      zoom: 11
+      });
+      var marker = new google.maps.Marker({
+      position: {lat: 33.748995, lng: -84.387982},
+      map: map,
+      title: 'Hello World!'
+      });
+      }
+      map.setOptions({styles: styles});
+      
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
+    <!-- Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <!--
+    End Document
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    -->
+  </body>
+</html>

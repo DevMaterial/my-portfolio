@@ -1,0 +1,60 @@
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile */
+@media (max-width: 550px) {
+
+  #i-nav{
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+  }
+
+  header nav ul {
+    overflow: hidden;
+    background: background:rgba(255,255,255, 0.9);
+    height: 0;
+  }
+
+  header nav ul.open {
+    height: auto;
+  }
+
+  header nav ul li {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+  }
+
+  .top {
+    height: 2000px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 550px) {
+  .nav-icon {
+    display: none;
+  }
+
+}

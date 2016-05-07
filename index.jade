@@ -1,0 +1,136 @@
+doctype html
+html(lang='en')
+  head
+    //
+      Basic Page Needs
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    meta(charset='utf-8')
+    title Yo.
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //
+      Mobile Specific Metas
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //
+      FONT
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(href='//fonts.googleapis.com/css?family=Raleway:400,300,600', rel='stylesheet', type='text/css')
+    //
+      CSS
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/skeleton.css')
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='css/media-queries.css')
+    //
+      Favicon
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(rel='icon', type='image/png', href='images/favicon.png')
+  body
+    //
+      Primary Page Layout
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    header
+      nav
+        a#i-nav
+          img(src="https://www.3riversfcu.org/assets/images/menu.png" class="nav-icon")
+        ul
+          li
+            a(href='#text1') About
+          li
+            a(href='#text3') Work
+          li
+            a(href='#text4') Contact
+          li 
+            a(href="http://developermaterial.tumblr.com/") Blog
+          li 
+            a(href="https://www.youtube.com/channel/UClE-pN-OOQrRUwi6HFHmDpA") Youtube
+          
+      img.tsimg(src='images/intro.png', alt='')
+      img.arrow(src='http://www.cclspecialty.com/_images/iconsLogosUniversal/downArrow.png', alt='')
+    .about
+    h2#text1 I make youtube tutorials
+    hr
+    .videos
+      iframe(width='350', height='250', src='https://www.youtube.com/embed/gOmHKM5xOMc', frameborder='0', allowfullscreen='')
+      iframe(width='350', height='250', src='https://www.youtube.com/embed/4rnFvqaY-go', frameborder='0', allowfullscreen='')
+      iframe(width='350', height='250', src='https://www.youtube.com/embed/DXmiH0hBNzU', frameborder='0', allowfullscreen='')
+    section.top
+      h2#text2 Skills
+      hr
+      img.graph(src='images/graph.png', alt='')
+      hr.line2
+      h4 My current stack:
+      p HTML / CSS / Javascript / jQuery / SASS / Jade
+      hr.line2
+      img.skills(src='images/skills.png', alt='')
+    h2#text3 Works
+    hr.line3
+    h3.large Some of my projects
+      .container
+        .row
+          .six.columns
+            img.images(src='images/hike.jpg')
+            .button-space
+              a(href="http://devmaterial.github.io/hike/")
+                button.button-primary Website
+            a.button(href='https://github.com/DevMaterial/hike') Github
+          .six.columns
+            img.images(src='images/gullible.jpg')
+            .button-space
+              a(href="http://devmaterial.github.io/gullible-shop/")
+                button.button-primary Website
+            a.button(href='https://github.com/DevMaterial/gullible-shop') Github
+    section.bottom
+      h2#text4 \ Contact Me /
+      a(href='mailto:developer.material@gmail.com' class="email")
+        h4 developer.material@gmail.com
+      hr
+        
+      .social-icons
+        ul
+          li
+            a(href='https://github.com/DevMaterial')
+              img.icons(src='icons/gh-icon.png')
+          li
+            a(href='https://twitter.com/DevMaterial')
+              img.icons(src='icons/twitter-icon.png')
+          li
+            a(href='https://www.linkedin.com/in/travis-sanon-120b6099')
+              img.icons(src='icons/in-icon.png')
+          li
+            a(href='https://www.youtube.com/channel/UClE-pN-OOQrRUwi6HFHmDpA')
+              img.icons(src='icons/yt-icon.png')
+              
+    h2 \ My Location /
+    h5 (Willing to relocate)
+    #map
+      
+    script.
+      function initMap() {
+      var mapDiv = document.getElementById('map');
+      var map = new google.maps.Map(mapDiv, {
+      center: {lat: 33.748995, lng: -84.387982},
+      zoom: 11
+      });
+      var marker = new google.maps.Marker({
+      position: {lat: 33.748995, lng: -84.387982},
+      map: map,
+      title: 'Hello World!'
+      });
+      }
+      map.setOptions({styles: styles});
+      
+    script(src='https://maps.googleapis.com/maps/api/js?callback=initMap', async='', defer='')
+      
+
+        
+    // Javascript
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
+    script(type="text/javascript", src="script.js")
+      
+    script(type="text/javascript", src="javascript.js")
+    //
+      End Document
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
